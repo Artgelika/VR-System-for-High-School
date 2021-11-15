@@ -18,6 +18,11 @@ public class HandPresence : MonoBehaviour
 
     void Start()
     {
+        TryInitialize()
+    }
+
+    void TryInitialize()
+    {
         List<InputDevice> devices = new List<InputDevice>();
         InputDevices.GetDevicesWithCharacteristics(controllerCharacteristics, devices);
 
@@ -30,7 +35,7 @@ public class HandPresence : MonoBehaviour
         {
             targetDevice = devices[0];
             GameObject prefab = controllerPrefabs.Find(controller => controller.name == targetDevice.name);
-            if(prefab)
+            if (prefab)
             {
                 spawnedController = Instantiate(prefab, transform);
             }
@@ -42,7 +47,7 @@ public class HandPresence : MonoBehaviour
 
             spawnedHandModel = Instantiate(handModelPrefab, transform);
             handAnimator = spawnedHandModel.GetComponent<Animator>();
-        } 
+        }
     }
 
     void UpdateHandAnimation()
@@ -69,16 +74,25 @@ public class HandPresence : MonoBehaviour
 
     void Update()
     {
-        if(showController)
+        if(!targetDevice.isValid)
         {
-            spawnedHandModel.SetActive(false);
-            spawnedController.SetActive(true);
+            TryInitialize();
         }
         else
         {
-            spawnedHandModel.SetActive(true);
-            spawnedController.SetActive(false);
-            UpdateHandAnimation();
+            if (showController)
+            {
+                spawnedHandModel.SetActive(false);
+                spawnedController.SetActive(true);
+            }
+            else
+            {
+                spawnedHandModel.SetActive(true);
+                spawnedController.SetActive(false);
+                UpdateHandAnimation();
+            }
         }
+
+        
     }
 }
