@@ -18,7 +18,7 @@ public class HandPresence : MonoBehaviour
 
     void Start()
     {
-        TryInitialize()
+        TryInitialize();
     }
 
     void TryInitialize()
