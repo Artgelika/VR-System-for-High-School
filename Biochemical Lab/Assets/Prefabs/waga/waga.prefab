@@ -1,5 +1,18 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!65 &5372636411056184139
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1929155947463680512}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0011000001, y: 0.0011000001, z: 0.00022832608}
+  m_Center: {x: 0.0000000037252983, y: 0.000000011176077, z: 0.000014159319}
 --- !u!1 &8275740074153853890
 GameObject:
   m_ObjectHideFlags: 0
@@ -27,6 +40,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 1265069149870618810}
   - {fileID: 6395835166648911232}
   - {fileID: 5760227743344252255}
   m_Father: {fileID: 0}
@@ -37,7 +51,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 6395835166648911232}
+    m_TransformParent: {fileID: 3427902828556308334}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 663c622b08e22ec47b9047c5adfa454f, type: 3}
       propertyPath: m_RootOrder
@@ -45,35 +59,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 663c622b08e22ec47b9047c5adfa454f, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.49593133
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 663c622b08e22ec47b9047c5adfa454f, type: 3}
       propertyPath: m_LocalScale.y
-      value: 23.333338
+      value: 100.000015
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 663c622b08e22ec47b9047c5adfa454f, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.51107013
+      value: 49.19853
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 663c622b08e22ec47b9047c5adfa454f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.00002415746
+      value: 2.0856996
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 663c622b08e22ec47b9047c5adfa454f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.0172
+      value: 2.220598
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 663c622b08e22ec47b9047c5adfa454f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.000453
+      value: -9.355172
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 663c622b08e22ec47b9047c5adfa454f, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.70710677
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 663c622b08e22ec47b9047c5adfa454f, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: -0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 663c622b08e22ec47b9047c5adfa454f, type: 3}
       propertyPath: m_LocalRotation.y
@@ -99,8 +113,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: podstawkaDoWagi
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 663c622b08e22ec47b9047c5adfa454f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 663c622b08e22ec47b9047c5adfa454f, type: 3}
+--- !u!1 &1929155947463680512 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 663c622b08e22ec47b9047c5adfa454f, type: 3}
+  m_PrefabInstance: {fileID: 1586626945958453073}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1265069149870618810 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 663c622b08e22ec47b9047c5adfa454f, type: 3}
+  m_PrefabInstance: {fileID: 1586626945958453073}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3479049343964491118
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -172,6 +200,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: klamka
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6d305187b659c8a43bf804c1f871e18b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d305187b659c8a43bf804c1f871e18b, type: 3}
 --- !u!1001 &5222708683642712756
@@ -183,7 +215,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 85f4bb7a5305e194585d3d87385ff6a5, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 85f4bb7a5305e194585d3d87385ff6a5, type: 3}
       propertyPath: m_LocalScale.y
@@ -203,7 +235,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 85f4bb7a5305e194585d3d87385ff6a5, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -9.427
+      value: -9.4244
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 85f4bb7a5305e194585d3d87385ff6a5, type: 3}
       propertyPath: m_LocalRotation.w
@@ -241,6 +273,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: drzwiczki_bez_klamki
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 85f4bb7a5305e194585d3d87385ff6a5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85f4bb7a5305e194585d3d87385ff6a5, type: 3}
 --- !u!4 &5760227743344252255 stripped
@@ -257,7 +293,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: bb3b5299c360a16468b87a3854095a03, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: bb3b5299c360a16468b87a3854095a03, type: 3}
       propertyPath: m_LocalScale.y
@@ -308,6 +344,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: f0a1cba5fae4047dc9cc0fb360a667d3, type: 2}
     - target: {fileID: -7511558181221131132, guid: bb3b5299c360a16468b87a3854095a03, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: f0a1cba5fae4047dc9cc0fb360a667d3, type: 2}
+    - target: {fileID: -7511558181221131132, guid: bb3b5299c360a16468b87a3854095a03, type: 3}
       propertyPath: m_Materials.Array.data[2]
       value: 
       objectReference: {fileID: 2100000, guid: 392865750ec844e4f9851a08bc5cc05c, type: 2}
@@ -318,6 +358,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: bb3b5299c360a16468b87a3854095a03, type: 3}
       propertyPath: m_Name
       value: waga_boki
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bb3b5299c360a16468b87a3854095a03, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb3b5299c360a16468b87a3854095a03, type: 3}
