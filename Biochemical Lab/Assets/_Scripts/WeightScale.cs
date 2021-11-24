@@ -16,12 +16,18 @@ public class WeightScale : MonoBehaviour
     float currentDeltaTime;
     float lastDeltaTime;
 
+  
+
+
     private void Awake()
     {
         forceToMass = 1f / Physics.gravity.magnitude;
     }
 
-    void UpdateWeight()
+
+    
+
+    public void UpdateWeight()
     {
         registeredRigidbodies = impulsePerRigidBody.Count;
         combinedForce = 0;
@@ -61,4 +67,7 @@ public class WeightScale : MonoBehaviour
             UpdateWeight();
         }
     }
+
+ 
+
 }
