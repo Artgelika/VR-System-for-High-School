@@ -2,14 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+using UnityEngine.UI;
+
 public class WeightScale : MonoBehaviour
 {
-    float forceToMass;
+
+    public static WeightScale instance;
+
+    public float forceToMass;
 
     public float combinedForce;
     public float calculatedMass;
 
     public int registeredRigidbodies;
+
+ 
 
     Dictionary<Rigidbody, float> impulsePerRigidBody = new Dictionary<Rigidbody, float>();
 
@@ -20,7 +27,7 @@ public class WeightScale : MonoBehaviour
 
 
     private void Awake()
-    {
+    {   instance = this;
         forceToMass = 1f / Physics.gravity.magnitude;
     }
 
@@ -38,6 +45,7 @@ public class WeightScale : MonoBehaviour
         }
 
         calculatedMass = -(float)(combinedForce * forceToMass);
+
     }
 
     private void FixedUpdate()
