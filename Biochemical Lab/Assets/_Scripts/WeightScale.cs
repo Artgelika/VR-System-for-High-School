@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class WeightScale : MonoBehaviour
 {
 
-    public static WeightScale instance;
+    // public static WeightScale instance;
 
     public float forceToMass;
 
@@ -27,7 +27,7 @@ public class WeightScale : MonoBehaviour
 
 
     private void Awake()
-    {   instance = this;
+    {   // instance = this;
         forceToMass = 1f / Physics.gravity.magnitude;
     }
 
@@ -45,6 +45,7 @@ public class WeightScale : MonoBehaviour
         }
 
         calculatedMass = -(float)(combinedForce * forceToMass);
+
 
     }
 

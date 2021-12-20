@@ -6,6 +6,7 @@ public class WeightScore : MonoBehaviour
     
     // public GameObject weight;
     public Text scoreText;
+    public WeightScale weightResults;
 
     // float score = 0;
     //public WeightScale weightResultFromScript;
@@ -23,14 +24,14 @@ public class WeightScore : MonoBehaviour
     //    weightScaleScript.calculatedMass -= 10.0f; 
     //}
 
-    //void Start()
-    //{
-        // scoreText.text = score.ToString();
-        // scoreText.text = WeightScale.instance.calculatedMass.ToString();
+    void Start()
+    {
+        scoreText.text = weightResults.calculatedMass.ToString("f2");
+    }
 
-        //Debug.Log("The weight is " + weightScaleScript.calculatedMass);
-        //weightScaleScript.calculatedMass = 10.0f;
-        //weightResultFromScript.calculatedMass = 10.0f;
+    //Debug.Log("The weight is " + weightScaleScript.calculatedMass);
+    //weightScaleScript.calculatedMass = 10.0f;
+    //weightResultFromScript.calculatedMass = 10.0f;
 
     //}
 
@@ -38,8 +39,9 @@ public class WeightScore : MonoBehaviour
 
     void Update()
     {
-        scoreText.text = WeightScale.instance.calculatedMass.ToString();
-        //weightResultToShow.text = weightResultFromScript.calculatedMass.ToString();
-        // scoreText = WeightScale.instance.UpdateWeight();//.ToString();
+        scoreText.text = weightResults.calculatedMass.ToString("f2"); //.UpdateWeight();
+    }                                                                 //    // scoreText.text = WeightScale.instance.calculatedMass.ToString();
+                                                                      //    //weightResultToShow.text = weightResultFromScript.calculatedMass.ToString();
+                                                                      //    // scoreText = WeightScale.instance.UpdateWeight();//.ToString();
+                                                                      //}
     }
-}
