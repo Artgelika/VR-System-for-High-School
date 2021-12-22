@@ -27,7 +27,7 @@ public class WeightScale : MonoBehaviour
 
 
     private void Awake()
-    {   // instance = this;
+    {   
         forceToMass = 1f / Physics.gravity.magnitude;
     }
 
