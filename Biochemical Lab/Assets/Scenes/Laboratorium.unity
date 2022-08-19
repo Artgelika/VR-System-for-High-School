@@ -23270,8 +23270,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2087444353}
-  - component: {fileID: 2087444352}
   - component: {fileID: 2087444354}
+  - component: {fileID: 2087444352}
   m_Layer: 6
   m_Name: XR Rig
   m_TagString: Untagged
@@ -23288,15 +23288,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 2087444351}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7448815bd5148434682b3d931066cd10, type: 3}
+  m_Script: {fileID: 11500000, guid: e0cb9aa70a22847b5925ee5f067c10a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 1194296519}
   m_OriginBaseGameObject: {fileID: 2087444351}
   m_CameraFloorOffsetObject: {fileID: 622890243}
-  m_RequestedTrackingOriginMode: 1
-  m_CameraYOffset: 1.36144
-  m_CameraGameObject: {fileID: 1194296516}
+  m_RequestedTrackingOriginMode: 0
+  m_CameraYOffset: 1.1176
 --- !u!4 &2087444353
 Transform:
   m_ObjectHideFlags: 0
