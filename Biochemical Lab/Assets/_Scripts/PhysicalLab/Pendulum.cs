@@ -8,7 +8,7 @@ public class Pendulum : MonoBehaviour
 
     [SerializeField]
     [Range(0.0f, 360.0f)]
-    private float _angle = 90.0f;
+    private float _angle = 45.0f;
 
     [SerializeField]
     [Range(0.0f, 360.0f)]
