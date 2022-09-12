@@ -58,3 +58,6 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+# ignore Photon and PUN Plugins
+/Assets/Photon Unity Networking
+/Assets/Plugins
