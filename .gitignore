@@ -64,3 +64,5 @@ crashlytics-build.properties
 
 # ignore Photon and PUN Plugins
 *Photon*
+
+*ComputerBuildMultiplayer*
