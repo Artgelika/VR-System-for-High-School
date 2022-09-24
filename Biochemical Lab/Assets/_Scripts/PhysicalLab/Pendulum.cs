@@ -21,16 +21,19 @@ public class Pendulum : MonoBehaviour
     void Start()
     {
         _start = PendulumRotation(_angle);
-        _end = PendulumRotation(- _angle);
+        _end = PendulumRotation(-_angle);
     }
 
-    // Update is called once per frame
     void Update()
     {
         _startTime += Time.deltaTime;
         transform.rotation = Quaternion.Lerp(_start, _end, (Mathf.Sin(_startTime * _speed + Mathf.PI/2) + 1.0f) / 2.0f);
     }
 
+    private void OnCollisionEnter(Collision collision)
+    {
+        
+    }
     void ResetTimer()
     {
         _startTime = 0.0f;

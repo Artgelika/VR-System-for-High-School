@@ -42,10 +42,12 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 
         PhotonNetwork.LoadLevel(roomSettings.sceneIndex);
 
-        RoomOptions roomOptions = new RoomOptions();
-        roomOptions.MaxPlayers = (byte)roomSettings.maxPlayer;
-        roomOptions.IsVisible = true;
-        roomOptions.IsOpen = true;
+        RoomOptions roomOptions = new RoomOptions
+        {
+            MaxPlayers = (byte)roomSettings.maxPlayer,
+            IsVisible = true,
+            IsOpen = true
+        };
 
         PhotonNetwork.JoinOrCreateRoom(roomSettings.Name, roomOptions, TypedLobby.Default);
     }
