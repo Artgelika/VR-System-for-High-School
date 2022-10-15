@@ -45,6 +45,37 @@ ExportedObj/
 *.pdf
 *.png*
 
+
+*.egg-info
+*.eggs
+.cache/
+*.svg
+*.png
+*.pdf
+*.xlsx
+*.xlx
+*.swp
+*.swo
+*.gz
+*.pkl
+
+*.aux
+*.bib
+*.sps
+*.blg
+*.bbl
+*.log
+
+*.out
+*.csv
+*.fasta
+*.xml
+
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
 # Unity3D generated meta files
 *.pidb.meta
 *.pdb.meta
@@ -63,7 +94,58 @@ crashlytics-build.properties
 /Assets/VRTK
 
 # ignore Photon and PUN Plugins
-*Photon*
+
 *ComputerBuildMultiplayer*
 *TextMesh Pro*
 
+Assets/Photon/Quantum/Assemblies/PhotonDeterministic.*
+Assets/Photon/Quantum/Assemblies/quantum.core.*
+Assets/Photon/Quantum/Assemblies/quantum.code.*
+
+*_i.c
+*_p.c
+*_i.h
+*.ilk
+*.meta
+*.obj
+*.pch
+*.pdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.tmp_proj
+*.log
+*.vspscc
+*.vssscc
+.builds
+*.pidb
+*.svclog
+*.scc
+
+[Dd]ebugPS/
+[Rr]eleasePS/
+dlldata.c
+
+ipch/
+*.aps
+*.ncb
+*.opendb
+*.opensdf
+*.sdf
+*.cachefile
+*.VC.db
+*.VC.VC.opendb
+
+*Demos*
+*Documentation*
+*.txt
+*Apple*
+*Linux*
+*\ProjectSettings\*
+*VR Controllers Models*
+*netstandard2.0*
