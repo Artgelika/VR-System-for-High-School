@@ -398,7 +398,7 @@ GameObject:
   - component: {fileID: 7805363434922324665}
   - component: {fileID: 1169728736339195729}
   - component: {fileID: 3163015536166110595}
-  - component: {fileID: 884848025002815943}
+  - component: {fileID: 3443835045478003794}
   m_Layer: 0
   m_Name: Network Player
   m_TagString: Untagged
@@ -468,7 +468,7 @@ MonoBehaviour:
   rightHand: {fileID: 1035078222103007219}
   leftHandAnimator: {fileID: 1389902360147352325}
   rightHandAnimator: {fileID: 8063505532419005487}
---- !u!114 &884848025002815943
+--- !u!114 &3443835045478003794
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -485,7 +485,7 @@ MonoBehaviour:
   recorderInUse: {fileID: 0}
   speakerInUse: {fileID: 3838915819784051208}
   AutoCreateRecorderIfNotFound: 0
-  UsePrimaryRecorder: 1
+  UsePrimaryRecorder: 0
   SetupDebugSpeaker: 0
 --- !u!1001 &1354781506028757166
 PrefabInstance:

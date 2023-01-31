@@ -95,12 +95,6 @@ crashlytics-build.properties
 
 # ignore Photon and PUN Plugins
 
-*ComputerBuildMultiplayer*
-*TextMesh Pro*
-
-Assets/Photon/Quantum/Assemblies/PhotonDeterministic.*
-Assets/Photon/Quantum/Assemblies/quantum.core.*
-Assets/Photon/Quantum/Assemblies/quantum.code.*
 
 *_i.c
 *_p.c
@@ -149,3 +143,7 @@ ipch/
 *\ProjectSettings\*
 *VR Controllers Models*
 *netstandard2.0*
+
+*BiochemicalLab_BackUpThisFolder_ButDontShipItWithYourGame*
+\BiochemicalLab_BackUpThisFolder
+*ComputerBuildMultiplayer*

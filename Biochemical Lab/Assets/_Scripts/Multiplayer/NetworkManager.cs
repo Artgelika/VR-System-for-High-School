@@ -17,11 +17,20 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     public List<DefaultRoom> defaultRooms;
     public GameObject roomUI;
 
+    /// <summary>
+    /// Function that enables user to connect to the server which allow them 
+    /// appear to the lobby and choose specific room (laboratory)
+    /// </summary>
     public void ConnectToServer()
     {
         PhotonNetwork.ConnectUsingSettings();
         Debug.Log("Try Connect To Server...");
     }
+
+    /// <summary>
+    /// After appearing to the game user appears in lobby
+    /// Lobby is a default room
+    /// </summary>
     public override void OnConnectedToMaster()
     {
         Debug.Log("Connected To Server");
@@ -29,6 +38,11 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         PhotonNetwork.JoinLobby();
     }
 
+
+    /// <summary>
+    /// Enables get into a lobby
+    /// button appers 
+    /// </summary>
     public override void OnJoinedLobby()
     {
         base.OnJoinedLobby();
@@ -36,6 +50,16 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         roomUI.SetActive(true);
     }
 
+    /// <summary>
+    /// Specific room - laboratory is created. 
+    /// 
+    /// Creating a room is needed before user join room by clicking 
+    /// a button in lobby
+    /// 
+    /// Room has maximal number of players in it;
+    /// is visible or not
+    /// is able to join (is open) or not
+    /// </summary>
     public void InitializeRoom(int defaultRoomIndex)
     {
         DefaultRoom roomSettings = defaultRooms[defaultRoomIndex];

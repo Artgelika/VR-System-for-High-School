@@ -9,14 +9,11 @@ EditorBuildSettings:
     path: Assets/Scenes/Lobby.unity
     guid: 7fac64ed249ed5e4a93feaab6db63a0e
   - enabled: 1
-    path: Assets/Scenes/Chemical/ChemicalLab.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
+    path: Assets/Scenes/Physical/PhysicalLaboratorium.unity
+    guid: 4257d205db636a64f9045c9f72bc78a7
   - enabled: 1
     path: Assets/Scenes/Biological/BiologicalLaboratorium.unity
-    guid: a39a5431e94a2e24faed97b7647329be
-  - enabled: 1
-    path: Assets/Scenes/Physical/PhysicalLaboratorium.unity
-    guid: 5bbeafc95e57a57448cbaf810fe13af2
+    guid: 16eb4d3bef94e284791c09dccf116b40
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bdf7f5847e3e68f419105606622fc950, type: 2}
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: 17892b93892433442b1ac71d6caf7ef2, type: 2}
